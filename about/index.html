@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="About, Hexo">
+    <meta name="keywords" content="About, Kris-chen27">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -30,7 +30,7 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
     <meta name="generator" content="Hexo 5.4.0">
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Kris-chen27" type="application/atom+xml">
     <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 </head>
 
@@ -149,7 +149,7 @@
                         <div class="logo-name">Kris-chen27</div>
                         <div class="logo-desc">
 
-                            If the path is long,the line will come.
+                            Never really desperate, only the lost of the soul.
 
                         </div>
                     </div>
@@ -375,7 +375,7 @@
                         <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
 
                             <div class="statis">
-                                <span class="count"><a href="/">2</a></span>
+                                <span class="count"><a href="/">3</a></span>
                                 <span class="name">Posts</span>
                             </div>
 
@@ -395,7 +395,7 @@
                                     <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
 
                                         <div class="statis">
-                                            <span class="count"><a href="/">2</a></span>
+                                            <span class="count"><a href="/">3</a></span>
                                             <span class="name">Posts</span>
                                         </div>
 
@@ -406,7 +406,7 @@
 
                                     </div>
                                     <div class="title">Kris-chen27</div>
-                                    <div class="career">Software Engineer</div>
+                                    <div class="career">Programmers</div>
                                     <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
 
                                         <a href="https://github.com/Kris-chen27/Kris-chen27" class="tooltipped"
@@ -491,9 +491,9 @@
                         </div>
                     </div>
 
-                    <div class="introduction center-align" data-aos="fade-up">If you wish to succeed, you should use
-                        persistence as your good friend, experience as your reference, prudence as your brother and hope
-                        as your sentry.</div>
+                    <div class="introduction center-align" data-aos="fade-up">Programmers want their code to get better
+                        and better, to be recognized by more people, so they constantly change and refine it.
+                        Experienced, will understand; No pains, no returns.</div>
 
                     <style type="text/css">
                         #posts-chart,
@@ -554,7 +554,7 @@
                                     name: 'Number of posts',
                                     type: 'line',
                                     color: ['#6772e5'],
-                                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0],
+                                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1],
                                     markPoint: {
                                         symbolSize: 45,
                                         color: ['#fa755a', '#3ecf8e', '#82d3f4'],
@@ -662,6 +662,48 @@
                         tagsChart.setOption(tagsOption);
                     </script>
 
+
+
+
+                    <div class="my-projects">
+                        <div class="title center-align" data-aos="zoom-in-up">
+                            <i class="fas fa-gift"></i>&nbsp;&nbsp;My Projects
+                        </div>
+                        <div class="row">
+
+
+                            <div class="col s12 m6 l4" data-aos="fade-up">
+                                <div class="info center-align">
+                                    <a href="https://github.com/Kris-chen27/pro_shop" class="icon"
+                                        style="background: linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)"
+                                        target="_blank">
+                                        <i class="fas fa-file-alt"></i>
+                                    </a>
+                                    <div class="info-title">
+                                        <a href="https://github.com/Kris-chen27/pro_shop" target="_blank">pro_shop</a>
+                                    </div>
+                                    <div class="info-desc">品优购商城(html+css+js+jquery).</div>
+                                </div>
+                            </div>
+
+                            <div class="col s12 m6 l4" data-aos="fade-up">
+                                <div class="info center-align">
+                                    <a href="https://github.com/Kris-chen27/Kris-chen27.github.io" class="icon"
+                                        style="background: linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)"
+                                        target="_blank">
+                                        <i class="fas fa-database"></i>
+                                    </a>
+                                    <div class="info-title">
+                                        <a href="https://github.com/Kris-chen27/Kris-chen27.github.io"
+                                            target="_blank">Blog</a>
+                                    </div>
+                                    <div class="info-desc">这是我的个人博客GitHub仓库。</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
 
 
 
@@ -852,7 +894,7 @@
         <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
 
-        <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="container row center-align" style="margin-bottom: 15px !important;">
             <div class="col s12 m8 l8 copy-right">
                 Copyright&nbsp;&copy;
 
@@ -881,6 +923,50 @@
                 </span>
 
                 <br>
+
+                <span id="sitetime">载入运行时间...</span>
+                <script>
+                    function siteTime() {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "4";
+                        var startDate = "11";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+                        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                            minutes);
+                        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                            diffMinutes * minutes) / seconds);
+                        if (startYear == todayYear) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                                " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                                " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        }
+                    }
+                    setInterval(siteTime, 1000);
+                </script>
 
                 <br>
 

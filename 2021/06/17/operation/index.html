@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaScript核心之DOM和BOM操作, Kris-chen27">
+    <meta name="keywords" content="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法, Kris-chen27">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaScript核心之DOM和BOM操作 | Kris-chen27</title>
+    <title>关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法 | Kris-chen27</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaScript核心之DOM和BOM操作</h1>
+                    <h1 class="description center-align post-title">关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法</h1>
                 </div>
             </div>
         </div>
@@ -444,7 +444,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-04-11
+                    2021-06-17
                 </div>
                 
 
@@ -465,8 +465,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>欢迎进入JavaScript的学习！交流群：1102210856，或者联系我：1421806074.<br>在这里你可以查阅所需要的资料，也可以与他人交流，JavaScript文档查阅<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/index.asp">JavaScript</a><br>期待您的加入！<br>访问我的——<a target="_blank" rel="noopener" href="https://github.com/Kris-chen27/Kris-chen27.github.io">Github</a>.<br><img src="/img/1.jpg"></p>
-<h2 id="Hello-JavaScript"><a href="#Hello-JavaScript" class="headerlink" title="Hello JavaScript!"></a>Hello JavaScript!</h2><h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2>
+                <h2 id="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法"><a href="#关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法" class="headerlink" title="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法"></a>关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法</h2><h3 id="问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR-1045-28000-Access-denied-for-user-‘root‘-‘localhost‘-using-password-NO"><a href="#问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR-1045-28000-Access-denied-for-user-‘root‘-‘localhost‘-using-password-NO" class="headerlink" title="问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR 1045 (28000): Access denied for user ‘root‘@‘localhost‘ (using password: NO)"></a>问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR 1045 (28000): Access denied for user ‘root‘@‘localhost‘ (using password: NO)</h3><h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><!-- ![](/img/1.jpg) -->
+<h5 id="一、找到配置文件并修改"><a href="#一、找到配置文件并修改" class="headerlink" title="一、找到配置文件并修改"></a>一、找到配置文件并修改</h5><p>如果你是很久没有使用数据库，密码已丢失，此时你需要进入MySQL的目录下，找到my-ini这个文件，记事本打开此文件，在mysqld下面加入  skip-grant-tables 这句，目的：命令行工具运行MySQL选择跳过权限无密码登录。<br><img src="/img/Database-1.png"><br><img src="/img/Database-2.png"><br><strong>注意：如果在MySQL目录文件夹中没有my-ini此文件，而有my-default.ini文件，这也是一样的，可以直接打开添加，你也可以复制my-default.ini文件将其重命名为my-ini，再对其进行添加</strong></p>
+<h5 id="二、修改通用密码"><a href="#二、修改通用密码" class="headerlink" title="二、修改通用密码"></a>二、修改通用密码</h5><p>修改配置文件后，window+r打开命令行窗口，输入 mysql -uroot -p 回车后出现enter password直接回车跳过权限登录，出现如下即代表登录成功<br><img src="/img/Database-3.png"><br>接下来需要做的就是修改通用密码了，输入 use mysql，很多教程已经过时，因此我们使用最新的的方法<br>接着输入  udate user set password=password(‘你想要设置的密码:如123456’) where user=’root’ and host=’localhost’<br>回车，如出现下面情况即代表成功<br><img src="/img/Database-4.png"><br>如果你记得的数据库 enter password，那么上面的操作可跳过，打开window+r命令行工具后，输入 mysql -uroot -p 回车后输入密码，接着上面的操作进行下一步，udate user set password=password(‘你想要设置的密码:如123456’) where user=’root’ and host=’localhost’  回车，如出现下面情况即代表成功<br><img src="/img/Database-4.png"></p>
+<h5 id="三、验证："><a href="#三、验证：" class="headerlink" title="三、验证："></a>三、验证：</h5><p>输入 exit 退出，重新输入 mysql -uroot -p 回车，输入你重新设置的密码，验证是否修改成功<br><img src="/img/Database-5.png"></p>
+<h5 id="四、重新打开SQLyog工具"><a href="#四、重新打开SQLyog工具" class="headerlink" title="四、重新打开SQLyog工具"></a>四、重新打开SQLyog工具</h5><p>如上图即代表设置成功，此时我们便重新打开SQLyog工具，将我们设置的连接名和密码输入并连接，即可进入SQLyog图形工具。</p>
+
                 
             </div>
             <hr/>
@@ -492,7 +496,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Kris-chen27.github.io/2021/04/11/javascript-he-xin-zhi-dom-he-bom-cao-zuo/">https://Kris-chen27.github.io/2021/04/11/javascript-he-xin-zhi-dom-he-bom-cao-zuo/</a>
+                    <a href="https://Kris-chen27.github.io/2021/06/17/operation/">https://Kris-chen27.github.io/2021/06/17/operation/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -697,9 +701,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2021/06/17/operation/">
                     <div class="card-image">
@@ -717,9 +722,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -728,6 +733,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -738,13 +744,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/10/hello-world/">
+                <a href="/2021/04/11/javascript-he-xin-zhi-dom-he-bom-cao-zuo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="JavaScript核心之DOM和BOM操作">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">JavaScript核心之DOM和BOM操作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -755,7 +761,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-11
                             </span>
                         <span class="publish-author">
                             
