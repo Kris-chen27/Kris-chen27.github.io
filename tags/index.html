@@ -371,10 +371,66 @@
                     </div>
                     <div class="tag-chips">
 
+
+                        <a href="/tags/nodemon%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/" title="nodemon工具的使用: 1">
+                            <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="nodemon工具的使用" style="background-color: #F9EBEA;">nodemon工具的使用
+                                <span class="tag-length">1</span>
+                            </span>
+                        </a>
+
+
+                        <a href="/tags/MySql/" title="MySql: 1">
+                            <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="MySql" style="background-color: #F5EEF8;">MySql
+                                <span class="tag-length">1</span>
+                            </span>
+                        </a>
+
+
+                        <a href="/tags/JavaScript/" title="JavaScript: 1">
+                            <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="JavaScript" style="background-color: #D5F5E3;">JavaScript
+                                <span class="tag-length">1</span>
+                            </span>
+                        </a>
+
+
+                        <a href="/tags/Hexo/" title="Hexo: 1">
+                            <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="Hexo" style="background-color: #E8F8F5;">Hexo
+                                <span class="tag-length">1</span>
+                            </span>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+        <style type="text/css">
+            #tag-wordcloud {
+                width: 100%;
+                height: 300px;
+            }
+        </style>
+
+        <div class="container" data-aos="fade-up">
+            <div class="card">
+                <div id="tag-wordcloud" class="card-content"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+        <script type="text/javascript">
+
+
+            $('#tag-wordcloud').jQCloud([{ "text": "nodemon工具的使用", "weight": 1, "link": "/tags/nodemon工具的使用/" }, { "text": "MySql", "weight": 1, "link": "/tags/MySql/" }, { "text": "JavaScript", "weight": 1, "link": "/tags/JavaScript/" }, { "text": "Hexo", "weight": 1, "link": "/tags/Hexo/" }], {
+                autoResize: true
+            });
+        </script>
 
 
 
@@ -437,7 +493,7 @@
                 |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
                 <br>
 
-                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">700</span>&nbsp;字
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">1.3k</span>&nbsp;字
 
 
 
@@ -703,6 +759,14 @@
 
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
 
+
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script>
 
 </body>
 

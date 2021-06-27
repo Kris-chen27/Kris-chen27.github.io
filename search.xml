@@ -4,13 +4,38 @@
   
     
     <entry>
+      <title>nodemon工具</title>
+      <link href="2021/06/27/nodemonblog/"/>
+      <url>2021/06/27/nodemonblog/</url>
+      
+        <content type="html"><![CDATA[<h5 id="在此之前，当我们每次修改完js代码之后，都要重新node运行一遍，这显然是并不友好的，效率就会变低，而如今有了nodemon工具的出现，这是监听node代码变化的工具，当我们修改代码后ctrl-s保存后，便会自动识别并完成node服务器和数据库服务器的重启。下面我们开始介绍nodemon的安装和使用，以及安装后可能无法使用出现的问题。"><a href="#在此之前，当我们每次修改完js代码之后，都要重新node运行一遍，这显然是并不友好的，效率就会变低，而如今有了nodemon工具的出现，这是监听node代码变化的工具，当我们修改代码后ctrl-s保存后，便会自动识别并完成node服务器和数据库服务器的重启。下面我们开始介绍nodemon的安装和使用，以及安装后可能无法使用出现的问题。" class="headerlink" title="在此之前，当我们每次修改完js代码之后，都要重新node运行一遍，这显然是并不友好的，效率就会变低，而如今有了nodemon工具的出现，这是监听node代码变化的工具，当我们修改代码后ctrl+s保存后，便会自动识别并完成node服务器和数据库服务器的重启。下面我们开始介绍nodemon的安装和使用，以及安装后可能无法使用出现的问题。"></a>在此之前，当我们每次修改完js代码之后，都要重新node运行一遍，这显然是并不友好的，效率就会变低，而如今有了nodemon工具的出现，这是监听node代码变化的工具，当我们修改代码后ctrl+s保存后，便会自动识别并完成node服务器和数据库服务器的重启。下面我们开始介绍nodemon的安装和使用，以及安装后可能无法使用出现的问题。</h5><hr><h2 id="node的安装和使用"><a href="#node的安装和使用" class="headerlink" title="node的安装和使用"></a>node的安装和使用</h2><h3 id="一、nodemon的安装"><a href="#一、nodemon的安装" class="headerlink" title="一、nodemon的安装"></a>一、nodemon的安装</h3><p>具体介绍你可以从npm的官网中(<a href="https://www.npmjs.com/package/nodemon)%E7%9C%8B%E5%88%B0">https://www.npmjs.com/package/nodemon)看到</a><br>首先进入到你的项目文件根目录，使用<font color=#d21623>npm install nodemon -g </font> 命令<br><font color=#42b983>在这里需要注意，命令后面的 -g 代表全局下都可以使用</font></p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> nodemon -g</code></pre><hr><h3 id="二、nodemon的使用"><a href="#二、nodemon的使用" class="headerlink" title="二、nodemon的使用"></a>二、nodemon的使用</h3><p>执行完上述命令后，我们便成功安装好了，此时我们便可以开始使用了，运行你的项目可以有如下三种方式</p><h4 id="1-windows命令窗口"><a href="#1-windows命令窗口" class="headerlink" title="1. windows命令窗口"></a>1. windows命令窗口</h4><p>快捷键<font color=#d21623>windows+r</font>打开命令窗口，分别进入到你的项目根目录下，然后执行<font color=#d21623>nodemon app.js </font> 命令<br><img src="/img/mon1.png"></p><hr><h4 id="2-Vscodo编译工具"><a href="#2-Vscodo编译工具" class="headerlink" title="2. Vscodo编译工具"></a>2. Vscodo编译工具</h4><p>如果你使用的VsCode编译工具，此时你便不需要去到命令窗口运行了，进入到你的项目文件，然后直接单机鼠标右键选择<font color=#42b983> 在集成终端打开 </font>，然后执行<font color=#42b983> nodemon app.js </font>命令<br><img src="/img/mon2.png"><br><img src="/img/mon3.png"></p><hr><h4 id="3-Powershell窗口"><a href="#3-Powershell窗口" class="headerlink" title="3. Powershell窗口"></a>3. Powershell窗口</h4><p>打开计算机，进入到我们的项目文件根目录下，此时按下shift键的同时单机鼠标右键，我们便会看到弹出的窗口中有一行<font color=#42b983>在此行打开Powershell窗口(s) </font>，点击后进入Powershell窗口执行<font color=#42b983> nodemon app.js </font>命令<br><img src="/img/mon4.png"><br><img src="/img/mon5.png"></p><hr><h3 id="三、nodemon使用过程中可能出现的问题及解决办法"><a href="#三、nodemon使用过程中可能出现的问题及解决办法" class="headerlink" title="三、nodemon使用过程中可能出现的问题及解决办法"></a>三、nodemon使用过程中可能出现的问题及解决办法</h3><p>问题描述：当我们安装nodemon成功后，却出现如下错误<br><img src="/img/mon6.png"><br>这是因为系统上禁止运行脚本。解决办法如下</p><h4 id="1-以管理员的身份打开Powershell，在windows10系统中，我们点击桌面左下角的搜索按钮，然后输入Powershell搜索，在弹出的菜单中找到Windows-Powershell的菜单项，以管理员的身份打开"><a href="#1-以管理员的身份打开Powershell，在windows10系统中，我们点击桌面左下角的搜索按钮，然后输入Powershell搜索，在弹出的菜单中找到Windows-Powershell的菜单项，以管理员的身份打开" class="headerlink" title="1.以管理员的身份打开Powershell，在windows10系统中，我们点击桌面左下角的搜索按钮，然后输入Powershell搜索，在弹出的菜单中找到Windows Powershell的菜单项，以管理员的身份打开"></a>1.以管理员的身份打开Powershell，在windows10系统中，我们点击桌面左下角的搜索按钮，然后输入<font color=#42b983>Powershell</font>搜索，在弹出的菜单中找到Windows Powershell的菜单项，以管理员的身份打开</h4><h2 id=""><a href="#" class="headerlink" title=""></a><img src="/img/mon7.png"></h2><h4 id="2-输入set-ExecutionPolicy-RemoteSigned"><a href="#2-输入set-ExecutionPolicy-RemoteSigned" class="headerlink" title="2. 输入set-ExecutionPolicy RemoteSigned"></a>2. 输入set-ExecutionPolicy RemoteSigned</h4><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="/img/mon8.jpg"></h2><h4 id="3-选择A或者Y即可，然后回车"><a href="#3-选择A或者Y即可，然后回车" class="headerlink" title="3. 选择A或者Y即可，然后回车"></a>3. 选择A或者Y即可，然后回车</h4><hr><h4 id="4-然后我们再重新执行nodemon命令即可"><a href="#4-然后我们再重新执行nodemon命令即可" class="headerlink" title="4. 然后我们再重新执行nodemon命令即可"></a>4. 然后我们再重新执行nodemon命令即可</h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> nodemon工具的使用 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法</title>
       <link href="2021/06/17/operation/"/>
       <url>2021/06/17/operation/</url>
       
-        <content type="html"><![CDATA[<h2 id="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法"><a href="#关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法" class="headerlink" title="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法"></a>关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法</h2><h2 id="问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR-1045-28000-Access-denied-for-user-‘root‘-‘localhost‘-using-password-NO"><a href="#问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR-1045-28000-Access-denied-for-user-‘root‘-‘localhost‘-using-password-NO" class="headerlink" title="问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR 1045 (28000): Access denied for user ‘root‘@‘localhost‘ (using password: NO)"></a>问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR 1045 (28000): Access denied for user ‘root‘@‘localhost‘ (using password: NO)</h2><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><!-- ![](/img/1.jpg) --><h3 id="一、找到配置文件并修改"><a href="#一、找到配置文件并修改" class="headerlink" title="一、找到配置文件并修改"></a>一、找到配置文件并修改</h3><p>如果你是很久没有使用数据库，密码已丢失，此时你需要进入MySQL的目录下，找到 <font color=#d21623> my-ini </font>这个文件，记事本打开此文件，在mysqld下面加入  <font color=#d21623> skip-grant-tables  </font> 这句，目的：命令行工具运行MySQL选择跳过权限无密码登录。<br><img src="/img/Database-1.png"><br><img src="/img/Database-2.png"><br><font color=red>注意：如果在MySQL目录文件夹中没有my-ini此文件，而有my-default.ini文件，这也是一样的，可以直接打开添加，你也可以复制my-default.ini文件将其重命名为my-ini，再对其进行添加</font></p><h3 id="二、修改通用密码"><a href="#二、修改通用密码" class="headerlink" title="二、修改通用密码"></a>二、修改通用密码</h3><p>修改配置文件后，<font color=#d21623> window+r </font> 打开命令行窗口，输入<font color=#d21623> mysql -uroot -p</font> </p><pre class=" language-windows"><code class="language-windows">c:\Users\HP\mysql -uroot -p</code></pre><p>回车后出现enter password直接回车跳过权限登录，出现如下即代表登录成功<br><img src="/img/Database-3.png"><br>接下来需要做的就是修改通用密码了，很多教程已经过时，因此我们使用最新的的方法</p><pre class=" language-windows"><code class="language-windows">mysql>use mysql，</code></pre><p>接着输入  </p><pre class=" language-windows"><code class="language-windows">mysql>udate user set password=password ('你想要设置的密码:如123456') where user='root' and host='localhost' </code></pre><p>回车，如出现下面情况即代表成功<br><img src="/img/Database-4.png"><br>如果你记得的数据库 enter password，那么上面的操作可跳过，打开 <font color=#d21623>  window+r  </font>  命令行工具后，输入 <font color=#d21623>  mysql -uroot -p </font> 回车后输入密码，接着上面的操作进行下一步，<font color=#d21623>  udate user set password=password(‘你想要设置的密码:如123456’) where user=’root’ and host=’localhost’  </font>  </p><pre class=" language-windows"><code class="language-windows"> c:\Users\HP\mysql -uroot -p</code></pre><pre class=" language-windows"><code class="language-windows">mysql>use mysql,``` windowsmysql>udate user set password=password('你想要设置的密码:如123456') where user='root' and host='localhost'</code></pre><p>回车，如出现下面情况即代表成功<br><img src="/img/Database-4.png"></p><h3 id="三、验证："><a href="#三、验证：" class="headerlink" title="三、验证："></a>三、验证：</h3><p>输入 <font color=#d21623>  exit </font>  退出，重新输入 <font color=#d21623>  mysql -uroot -p  </font> 回车，输入你重新设置的密码，验证是否修改成功<br><img src="/img/Database-5.png"></p><h3 id="四、重新打开SQLyog工具"><a href="#四、重新打开SQLyog工具" class="headerlink" title="四、重新打开SQLyog工具"></a>四、重新打开SQLyog工具</h3><p>如上图即代表设置成功，此时我们便重新打开 <font color=#d21623>  SQLyog  </font> 工具，将我们设置的连接名和密码输入并连接，即可进入SQLyog图形工具。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法"><a href="#关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法" class="headerlink" title="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法"></a>关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法</h2><h2 id="问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR-1045-28000-Access-denied-for-user-‘root‘-‘localhost‘-using-password-NO"><a href="#问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR-1045-28000-Access-denied-for-user-‘root‘-‘localhost‘-using-password-NO" class="headerlink" title="问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR 1045 (28000): Access denied for user ‘root‘@‘localhost‘ (using password: NO)"></a>问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR 1045 (28000): Access denied for user ‘root‘@‘localhost‘ (using password: NO)</h2><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><!-- ![](/img/1.jpg) --><h3 id="一、找到配置文件并修改"><a href="#一、找到配置文件并修改" class="headerlink" title="一、找到配置文件并修改"></a>一、找到配置文件并修改</h3><p>如果你是很久没有使用数据库，密码已丢失，此时你需要进入MySQL的目录下，找到 <font color=#d21623> my-ini </font>这个文件，记事本打开此文件，在mysqld下面加入  <font color=#d21623> skip-grant-tables  </font> 这句，目的：命令行工具运行MySQL选择跳过权限无密码登录。<br><img src="/img/Database-1.png"><br><img src="/img/Database-2.png"><br><font color=red>注意：如果在MySQL目录文件夹中没有my-ini此文件，而有my-default.ini文件，这也是一样的，可以直接打开添加，你也可以复制my-default.ini文件将其重命名为my-ini，再对其进行添加</font></p><h3 id="二、修改通用密码"><a href="#二、修改通用密码" class="headerlink" title="二、修改通用密码"></a>二、修改通用密码</h3><p>修改配置文件后，<font color=#d21623> window+r </font> 打开命令行窗口，输入<font color=#d21623> mysql -uroot -p</font> </p><pre class=" language-windows"><code class="language-windows">c:\Users\HP\mysql -uroot -p</code></pre><p>回车后出现enter password直接回车跳过权限登录，出现如下即代表登录成功<br><img src="/img/Database-3.png"><br>接下来需要做的就是修改通用密码了，很多教程已经过时，因此我们使用最新的的方法</p><pre class=" language-windows"><code class="language-windows">mysql>use mysql，</code></pre><p>接着输入  </p><pre class=" language-windows"><code class="language-windows">mysql>udate user set password=password ('你想要设置的密码:如123456') where user='root' and host='localhost' </code></pre><p>回车，如出现下面情况即代表成功<br><img src="/img/Database-4.png"><br>如果你记得的数据库 enter password，那么上面的操作可跳过，打开 <font color=#d21623>  window+r  </font>  命令行工具后，输入 <font color=#d21623>  mysql -uroot -p </font> 回车后输入密码，接着上面的操作进行下一步，<font color=#d21623>  udate user set password=password(‘你想要设置的密码:如123456’) where user=’root’ and host=’localhost’  </font>  </p><pre class=" language-windows"><code class="language-windows"> c:\Users\HP\mysql -uroot -p</code></pre><pre class=" language-windows"><code class="language-windows">mysql>use mysql,</code></pre><pre class=" language-windows"><code class="language-windows">mysql>udate user set password=password('你想要设置的密码:如123456') where user='root' and host='localhost'</code></pre><p>回车，如出现下面情况即代表成功<br><img src="/img/Database-4.png"></p><h3 id="三、验证："><a href="#三、验证：" class="headerlink" title="三、验证："></a>三、验证：</h3><p>输入 <font color=#d21623>  exit </font>  退出，重新输入 <font color=#d21623>  mysql -uroot -p  </font> 回车，输入你重新设置的密码，验证是否修改成功<br><img src="/img/Database-5.png"></p><h3 id="四、重新打开SQLyog工具"><a href="#四、重新打开SQLyog工具" class="headerlink" title="四、重新打开SQLyog工具"></a>四、重新打开SQLyog工具</h3><p>如上图即代表设置成功，此时我们便重新打开 <font color=#d21623>  SQLyog  </font> 工具，将我们设置的连接名和密码输入并连接，即可进入SQLyog图形工具。</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> MySql </tag>
+            
+        </tags>
       
     </entry>
     
@@ -25,6 +50,12 @@
       
       
       
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -37,6 +68,12 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
       
     </entry>
     

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Kris-chen27">
+    <meta name="keywords" content="Tag: nodemon工具的使用, Kris-chen27">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Kris-chen27</title>
+    <title>Tag: nodemon工具的使用 | Kris-chen27</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -318,244 +318,90 @@
 
     </header>
 
+    <div class="bg-cover pd-header about-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+                    <div class="brand">
+                        <div class="title center-align">
 
-    <style>
-        .carousel-control {
-            width: 45px;
-            height: 45px;
-            line-height: 55px;
-            border-radius: 45px;
-            background: transparent;
-            cursor: pointer;
-            z-index: 100;
-        }
+                            Kris-chen27
 
-        #prev-cover {
-            position: absolute;
-            top: 48%;
-            left: 8px;
-        }
+                        </div>
 
-        #next-cover {
-            position: absolute;
-            top: 48%;
-            right: 8px;
-            ;
-        }
+                        <div class="description center-align">
 
-        #prev-cover i {
-            margin-right: 3px;
-        }
+                            <span id="subtitle"></span>
+                            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                            <script>
+                                var typed = new Typed("#subtitle", {
+                                    strings: ['道阻且长，行则将至', 'If the path is long,the line will come'],
+                                    startDelay: 300,
+                                    typeSpeed: 100,
+                                    loop: true,
+                                    backSpeed: 50,
+                                    showCursor: true
+                                });
+                            </script>
 
-        #next-cover i {
-            margin-left: 3px;
-        }
-
-        .carousel-control:hover {
-            background-color: rgba(0, 0, 0, .4);
-        }
-
-        .carousel-control i {
-            color: #fff;
-            font-size: 2.4rem;
-        }
-    </style>
-
-
-
-    <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-
-
-        <div class="carousel-item red white-text bg-cover about-cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-                        <div class="brand">
-                            <div class="title center-align">
-
-                                Kris-chen27
-
-                            </div>
-
-                            <div class="description center-align">
-
-                                <span id="subtitle"></span>
-                                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                                <script>
-                                    var typed = new Typed("#subtitle", {
-                                        strings: ['道阻且长，行则将至', 'If the path is long,the line will come'],
-                                        startDelay: 300,
-                                        typeSpeed: 100,
-                                        loop: true,
-                                        backSpeed: 50,
-                                        showCursor: true
-                                    });
-                                </script>
-
-                            </div>
                         </div>
                     </div>
                 </div>
-
-
-                <script>
-                    // 每天切换 banner 图.  Switch banner image every day.
-                    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-                    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-                </script>
-
-
-                <div class="cover-btns">
-                    <a href="#articles" class="waves-effect waves-light btn">
-                        <i class="fa fa-angle-double-down"></i>Start
-                    </a>
-
-
-                    <a href="https://github.com/Kris-chen27/Kris-chen27" class="waves-effect waves-light btn"
-                        target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-
-                </div>
-                <div class="cover-social-link">
-                    <a href="https://github.com/Kris-chen27/Kris-chen27" class="tooltipped" target="_blank"
-                        data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-
-
-                    <a href="mailto:1421806074@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我"
-                        data-position="top" data-delay="50">
-                        <i class="fas fa-envelope-open"></i>
-                    </a>
-
-
-
-
-
-
-
-                    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1421806074" class="tooltipped"
-                        target="_blank" data-tooltip="QQ联系我: 1421806074" data-position="top" data-delay="50">
-                        <i class="fab fa-qq"></i>
-                    </a>
-
-
-
-
-
-
-
-                    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top"
-                        data-delay="50">
-                        <i class="fas fa-rss"></i>
-                    </a>
-                </div>
             </div>
+
+
+            <script>
+                // 每天切换 banner 图.  Switch banner image every day.
+                var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+                $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+            </script>
+
         </div>
-
-
     </div>
-
-    <script>
-        $(function () {
-            let coverSlider = $('.carousel');
-
-            //用户触摸轮播自动 restartPlay 是否生效
-            let initUserPressedOrDraggedActive = false
-
-            //用户触摸轮播自动 restartPlay
-            function initUserPressedOrDragged(instance) {
-                setInterval(() => {
-                    if (instance.pressed || instance.dragged) {
-                        // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                        restartPlay()
-                    }
-                }, 1000)
-            }
-
-            coverSlider.carousel({
-                duration: Number('120'),
-                fullWidth: true,
-                indicators: 'true' === 'true',
-                onCycleTo() {
-                    if (!initUserPressedOrDraggedActive) {
-                        // console.log('initUserPressedOrDraggedActive')
-                        initUserPressedOrDragged(this)
-                        initUserPressedOrDraggedActive = true
-                    }
-                },
-            })
-
-            let carouselIntervalId;
-
-            // Loop to call the next cover article picture.
-            let autoCarousel = function () {
-                carouselIntervalId = setInterval(function () {
-                    coverSlider.carousel('next');
-                }, 5000);
-            };
-            autoCarousel();
-
-
-            function restartPlay() {
-
-                clearInterval(carouselIntervalId);
-                autoCarousel();
-
-            };
-
-
-            // prev and next cover post.
-            $('#prev-cover').click(function () {
-                coverSlider.carousel('prev');
-                restartPlay();
-            });
-            $('#next-cover').click(function () {
-                coverSlider.carousel('next');
-                restartPlay();
-            });
-
-        });
-    </script>
-
-
 
     <main class="content">
 
 
-        <div id="indexCard" class="index-card">
-            <div class="container ">
-                <div class="card">
-                    <div class="card-content">
 
-                        <div class="dream">
-
-                            <div class="title center-align">
-                                <i class="far fa-lightbulb"></i>&nbsp;&nbsp;程序员
-                            </div>
-
-                            <div class="row">
-                                <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-                                    高质量的代码就是对程序得最好注释。当你打算要添加注释时，试试问问自己，“我如何能改进编码以至于根本不需要添加注释？”改进你的代码，然后才是用注释使它更清楚。这也是我所要去追求的。
-                                </div>
-                            </div>
-                        </div>
+        <div id="tags" class="container chip-container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="tag-title center-align">
+                        <i class="fas fa-tags"></i>&nbsp;&nbsp;Post Tags
+                    </div>
+                    <div class="tag-chips">
 
 
+                        <a href="/tags/nodemon%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/" title="nodemon工具的使用: 1">
+                            <span class="chip center-align waves-effect waves-light
+                             chip-active " data-tagname="nodemon工具的使用" style="background-color: #F9EBEA;">nodemon工具的使用
+                                <span class="tag-length">1</span>
+                            </span>
+                        </a>
 
 
+                        <a href="/tags/MySql/" title="MySql: 1">
+                            <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="MySql" style="background-color: #F5EEF8;">MySql
+                                <span class="tag-length">1</span>
+                            </span>
+                        </a>
 
 
+                        <a href="/tags/JavaScript/" title="JavaScript: 1">
+                            <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="JavaScript" style="background-color: #D5F5E3;">JavaScript
+                                <span class="tag-length">1</span>
+                            </span>
+                        </a>
 
 
-                        <div id="recommend-sections" class="recommend">
-
-
-
-
-                        </div>
+                        <a href="/tags/Hexo/" title="Hexo: 1">
+                            <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="Hexo" style="background-color: #E8F8F5;">Hexo
+                                <span class="tag-length">1</span>
+                            </span>
+                        </a>
 
                     </div>
                 </div>
@@ -564,15 +410,14 @@
 
 
 
-
-        <!-- 所有文章卡片 -->
         <article id="articles" class="container articles">
-            <div class="row article-row">
+            <div class="row tags-posts">
 
-                <div class="article col s12 m6 l4" data-aos="zoom-in">
+
+                <div class="article tag-post col s12 m6 l4" data-tags="nodemon工具的使用" data-aos="fade-up">
                     <div class="card">
                         <a href="/2021/06/27/nodemonblog/">
-                            <div class="card-image">
+                            <div class="card-image tag-image">
 
 
                                 <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="nodemon工具">
@@ -580,13 +425,7 @@
                                 <span class="card-title">nodemon工具</span>
                             </div>
                         </a>
-
                         <div class="card-content article-content">
-                            <div class="summary block-with-text">
-
-                                在此之前，当我们每次修改完js代码之后，都要重新node运行一遍，这显然是并不友好的，效率就会变低，而如今有了nodemon工具的出现，这是监听node代码变化的工具，当我们修改代码后ctrl+s保存后，便会自动识别并完成node服务器和数
-
-                            </div>
                             <div class="publish-info">
                                 <span class="publish-date">
                                     <i class="far fa-clock fa-fw icon-date"></i>2021-06-27
@@ -599,156 +438,11 @@
                                 </span>
                             </div>
                         </div>
-
-
-                        <div class="card-action article-tags">
-
-                            <a href="/tags/nodemon%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/">
-                                <span class="chip bg-color">nodemon工具的使用</span>
-                            </a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="article col s12 m6 l4" data-aos="zoom-in">
-                    <div class="card">
-                        <a href="/2021/06/17/operation/">
-                            <div class="card-image">
-
-
-                                <img src="/medias/featureimages/19.jpg" class="responsive-img"
-                                    alt="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法">
-
-                                <span class="card-title">关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法</span>
-                            </div>
-                        </a>
-
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-
-                                关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法问题描述：当我们打开SQLyog工具时无法进入，弹出窗口ERROR 1045 (28000): Access
-                                denied for user ‘root‘@‘localho
-
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2021-06-17
-                                </span>
-                                <span class="publish-author">
-
-                                    <i class="fas fa-user fa-fw"></i>
-                                    Kris-chen27
-
-                                </span>
-                            </div>
-                        </div>
-
-
-                        <div class="card-action article-tags">
-
-                            <a href="/tags/MySql/">
-                                <span class="chip bg-color">MySql</span>
-                            </a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="article col s12 m6 l4" data-aos="zoom-in">
-                    <div class="card">
-                        <a href="/2021/04/11/javascript-he-xin-zhi-dom-he-bom-cao-zuo/">
-                            <div class="card-image">
-
-
-                                <img src="/medias/featureimages/18.jpg" class="responsive-img"
-                                    alt="JavaScript核心之DOM和BOM操作">
-
-                                <span class="card-title">JavaScript核心之DOM和BOM操作</span>
-                            </div>
-                        </a>
-
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-
-                                欢迎进入JavaScript的学习！交流群：1102210856，或者联系我：1421806074.在这里你可以查阅所需要的资料，也可以与他人交流，JavaScript文档查阅JavaScript期待您的加入！访问我的——Github.
-                                H
-
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2021-04-11
-                                </span>
-                                <span class="publish-author">
-
-                                    <i class="fas fa-user fa-fw"></i>
-                                    Kris-chen27
-
-                                </span>
-                            </div>
-                        </div>
-
-
-                        <div class="card-action article-tags">
-
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
-                            </a>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="article col s12 m6 l4" data-aos="zoom-in">
-                    <div class="card">
-                        <a href="/2021/04/10/hello-world/">
-                            <div class="card-image">
-
-
-                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-
-                                <span class="card-title">Hello World</span>
-                            </div>
-                        </a>
-
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you
-                                get any problems when using Hex
-
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
-                                </span>
-                                <span class="publish-author">
-
-                                    <i class="fas fa-user fa-fw"></i>
-                                    Kris-chen27
-
-                                </span>
-                            </div>
-                        </div>
-
-
-                        <div class="card-action article-tags">
-
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
-                            </a>
-
-                        </div>
-
                     </div>
                 </div>
 
             </div>
         </article>
-
     </main>
 
 
