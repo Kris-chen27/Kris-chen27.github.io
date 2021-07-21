@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="nodemon工具, Kris-chen27">
+    <meta name="keywords" content="关于VmWare下安装Centos7后无法使用问题——已解决, Kris-chen27">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>nodemon工具 | Kris-chen27</title>
+    <title>关于VmWare下安装Centos7后无法使用问题——已解决 | Kris-chen27</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">nodemon工具</h1>
+                    <h1 class="description center-align post-title">关于VmWare下安装Centos7后无法使用问题——已解决</h1>
                 </div>
             </div>
         </div>
@@ -432,8 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/nodejs/">
-                                <span class="chip bg-color">nodejs</span>
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
                             </a>
                         
                     </div>
@@ -448,7 +448,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-06-27
+                    2021-07-21
                 </div>
                 
 
@@ -457,14 +457,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    584
+                    231
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    1 Min
                 </div>
                 
 
@@ -484,27 +484,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在此之前，当我们每次修改完js代码之后，都要重新node运行一遍，这显然是并不友好的，效率就会变低，而如今有了nodemon工具的出现，这是监听node代码变化的工具，当我们修改代码后ctrl+s保存后，便会自动识别并完成node服务器和数据库服务器的重启。下面我们开始介绍nodemon的安装和使用，以及安装后可能无法使用出现的问题。</p>
+                <p>相信看到这篇文章时，你已经安装号好VmWare和Centos7虚拟机了，但是当时运行安装好的虚拟机时，却提示如下错误<br><img src="/img/vw/vw1.png"></p>
 <hr>
-<h2 id="node的安装和使用"><a href="#node的安装和使用" class="headerlink" title="node的安装和使用"></a>node的安装和使用</h2><h3 id="一、nodemon的安装"><a href="#一、nodemon的安装" class="headerlink" title="一、nodemon的安装"></a>一、nodemon的安装</h3><p>具体介绍你可以访问npm的官网——<a target="_blank" rel="noopener" href="https://www.npmjs.com/package/nodemon">npm官网</a><br>首先进入到你的项目文件根目录，使用<font color=#d21623>npm install nodemon -g </font> 命令<br><font color=#42b983>在这里需要注意，命令后面的 -g 代表全局下都可以使用</font></p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> nodemon -g
-</code></pre>
+<p><font color=#42b983>问题描述：这个问题实质上是电脑是否支持虚拟化，即需要进入BIOS界面将Disable改为Enable</font></p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="一、重启电脑"><a href="#一、重启电脑" class="headerlink" title="一、重启电脑"></a>一、重启电脑</h3><hr>
+<h3 id="二、进入BIOS界面"><a href="#二、进入BIOS界面" class="headerlink" title="二、进入BIOS界面"></a>二、进入BIOS界面</h3><p>当我们重启电脑时，不同的电脑进入BIOS界面的方式不同，具体自己的电脑进入可自行百度查询，一般有F2、F10、F12等；<br><font color=#42b983>注意：重启时要立即按或者一直按着，否则开机后再按就没用了</font></p>
 <hr>
-<h3 id="二、nodemon的使用"><a href="#二、nodemon的使用" class="headerlink" title="二、nodemon的使用"></a>二、nodemon的使用</h3><p>执行完上述命令后，我们便成功安装好了，此时我们便可以开始使用了，运行你的项目可以有如下三种方式</p>
-<h4 id="1-windows命令窗口"><a href="#1-windows命令窗口" class="headerlink" title="1. windows命令窗口"></a>1. windows命令窗口</h4><p>快捷键<font color=#d21623>windows+r</font>打开命令窗口，分别进入到你的项目根目录下，然后执行<font color=#d21623>nodemon app.js </font> 命令<br><img src="/img/mon1.png"></p>
+<h3 id="三、修改属性"><a href="#三、修改属性" class="headerlink" title="三、修改属性"></a>三、修改属性</h3><p>找到CPU选项下面的CPU Configuration，将Intel HT Technology改为ENabled，还有Security –Virtualization –Intel Virtualization Technology设置为ENabled</p>
 <hr>
-<h4 id="2-Vscodo编译工具"><a href="#2-Vscodo编译工具" class="headerlink" title="2. Vscodo编译工具"></a>2. Vscodo编译工具</h4><p>如果你使用的VsCode编译工具，此时你便不需要去到命令窗口运行了，进入到你的项目文件，然后直接单机鼠标右键选择<font color=#42b983> 在集成终端打开 </font>，然后执行<font color=#42b983> nodemon app.js </font>命令<br><img src="/img/mon2.png"><br><img src="/img/mon3.png"></p>
+<h3 id="四、保存退出"><a href="#四、保存退出" class="headerlink" title="四、保存退出"></a>四、保存退出</h3><p>保存完毕之后继续开机。</p>
 <hr>
-<h4 id="3-Powershell窗口"><a href="#3-Powershell窗口" class="headerlink" title="3. Powershell窗口"></a>3. Powershell窗口</h4><p>打开计算机，进入到我们的项目文件根目录下，此时按下shift键的同时单机鼠标右键，我们便会看到弹出的窗口中有一行<font color=#42b983>在此行打开Powershell窗口(s) </font>，点击后进入Powershell窗口执行<font color=#42b983> nodemon app.js </font>命令<br><img src="/img/mon4.png"><br><img src="/img/mon5.png"></p>
-<hr>
-<h3 id="三、nodemon使用过程中可能出现的问题及解决办法"><a href="#三、nodemon使用过程中可能出现的问题及解决办法" class="headerlink" title="三、nodemon使用过程中可能出现的问题及解决办法"></a>三、nodemon使用过程中可能出现的问题及解决办法</h3><p>问题描述：当我们安装nodemon成功后，却出现如下错误<br><img src="/img/mon6.png"></p>
-<p>这是因为系统上禁止运行脚本。解决办法如下</p>
-<h4 id="1-以管理员的身份打开Powershell"><a href="#1-以管理员的身份打开Powershell" class="headerlink" title="1.以管理员的身份打开Powershell"></a>1.以管理员的身份打开Powershell</h4><p>在windows10系统中，我们点击桌面左下角的搜索按钮，然后输入<font color=#42b983>Powershell</font>搜索，在弹出的菜单中找到Windows Powershell的菜单项，以管理员的身份打开<br><img src="/img/mon7.png"></p>
-<hr>
-<h4 id="2-输入set-ExecutionPolicy-RemoteSigned"><a href="#2-输入set-ExecutionPolicy-RemoteSigned" class="headerlink" title="2. 输入set-ExecutionPolicy RemoteSigned"></a>2. 输入set-ExecutionPolicy RemoteSigned</h4><p><img src="/img/mon8.jpg"></p>
-<hr>
-<h4 id="3-选择A或者Y即可，然后回车"><a href="#3-选择A或者Y即可，然后回车" class="headerlink" title="3. 选择A或者Y即可，然后回车"></a>3. 选择A或者Y即可，然后回车</h4><hr>
-<h4 id="4-重新执行nodemon命令"><a href="#4-重新执行nodemon命令" class="headerlink" title="4. 重新执行nodemon命令"></a>4. 重新执行nodemon命令</h4>
+<h3 id="五、重启centos7虚拟机"><a href="#五、重启centos7虚拟机" class="headerlink" title="五、重启centos7虚拟机"></a>五、重启centos7虚拟机</h3><p>重启之后就可以发现能正常进入使用了。</p>
+
                 
             </div>
             <hr/>
@@ -530,7 +521,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Kris-chen27.github.io/2021/06/27/nodemonblog/">https://Kris-chen27.github.io/2021/06/27/nodemonblog/</a>
+                    <a href="https://Kris-chen27.github.io/2021/07/21/vmware/">https://Kris-chen27.github.io/2021/07/21/vmware/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,8 +559,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/nodejs/">
-                                    <span class="chip bg-color">nodejs</span>
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
                                 </a>
                             
                         </div>
@@ -785,9 +776,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2021/07/21/vmware/">
                     <div class="card-image">
@@ -805,9 +797,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -816,6 +808,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -834,13 +827,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/17/operation/">
+                <a href="/2021/06/27/nodemonblog/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="nodemon工具">
                         
-                        <span class="card-title">关于MySQL数据库无法使用及SQLyog图形工具无法进入的解决办法</span>
+                        <span class="card-title">nodemon工具</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -851,7 +844,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-27
                             </span>
                         <span class="publish-author">
                             
@@ -864,8 +857,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/MySql/">
-                        <span class="chip bg-color">MySql</span>
+                    <a href="/tags/nodejs/">
+                        <span class="chip bg-color">nodejs</span>
                     </a>
                     
                 </div>

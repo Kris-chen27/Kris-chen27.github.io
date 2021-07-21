@@ -6,7 +6,7 @@
   <link href="https://kris-chen27.github.io/atom.xml" rel="self"/>
   
   <link href="https://kris-chen27.github.io/"/>
-  <updated>2021-06-27T06:23:15.163Z</updated>
+  <updated>2021-07-21T15:04:03.406Z</updated>
   <id>https://kris-chen27.github.io/</id>
   
   <author>
@@ -17,25 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于VmWare下安装Centos7后无法使用问题——已解决</title>
+    <link href="https://kris-chen27.github.io/2021/07/21/vmware/"/>
+    <id>https://kris-chen27.github.io/2021/07/21/vmware/</id>
+    <published>2021-07-21T14:25:48.000Z</published>
+    <updated>2021-07-21T15:04:03.406Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;相信看到这篇文章时，你已经安装号好VmWare和Centos7虚拟机了，但是当时运行安装好的虚拟机时，却提示如下错误&lt;br&gt;&lt;img src=&quot;/img/vw/vw1.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;font</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="https://kris-chen27.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>nodemon工具</title>
     <link href="https://kris-chen27.github.io/2021/06/27/nodemonblog/"/>
     <id>https://kris-chen27.github.io/2021/06/27/nodemonblog/</id>
     <published>2021-06-27T04:41:02.000Z</published>
-    <updated>2021-06-27T06:23:15.163Z</updated>
+    <updated>2021-07-21T15:07:31.144Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h5</summary>
+    <summary type="html">&lt;p&gt;在此之前，当我们每次修改完js代码之后，都要重新node运行一遍，这显然是并不友好的，效率就会变低，而如今有了nodemon工具的出现，这是监听node代码变化的工具，当我们修改代码后ctrl+s保存后，便会自动识别并完成node服务器和数据库服务器的重启。下面我们开始介绍</summary>
         
       
     
     
     
     
-    <category term="nodemon工具的使用" scheme="https://kris-chen27.github.io/tags/nodemon%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <category term="nodejs" scheme="https://kris-chen27.github.io/tags/nodejs/"/>
     
   </entry>
   
